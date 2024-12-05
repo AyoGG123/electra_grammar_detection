@@ -1,0 +1,98 @@
+.input_data {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #0b132b;
+  color: #f8f9fa;
+  padding-top: 10px;
+  gap: 20px;
+  box-shadow: 10px 10px 25px #00000080;
+  text-align: center;
+}
+
+/* 通用样式，适用于所有设备 */
+.input_data input {
+  height: 25px;
+  text-align: center;
+  background: none;
+  font-size: 15px;
+  border-radius: 22px;
+  outline: none;
+  color: #f8f9fa;
+}
+
+/* 媒体查询 - 在移动设备上设置宽度为300px */
+@media (max-width: 768px) {
+  .input_data input {
+    width: 300px;
+  }
+}
+
+/* 媒体查询 - 在电脑上设置宽度为600px */
+@media (min-width: 769px) {
+  .input_data input {
+    width: 600px;
+  }
+}
+
+.result_display {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.rwd-table {
+  width: 100%;
+  align-items: center;
+}
+.thead-dark {
+  align-items: center;
+}
+tbody {
+  align-items: center;
+}
+tr {
+  display: flex; /* 確保使用彈性布局 */
+  justify-content: space-between; /* 水平置中對齊 */
+  align-items: center; /* 垂直置中對齊 */
+  flex-direction: row; /* 確保子元素水平排列 */
+  background-color: #6b675d; /* 背景色 */
+}
+
+th {
+  color: #ffffff;
+}
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid;
+  /* 文本水平居中 */
+  vertical-align: middle;
+}
+
+.button {
+  display: inline-block;
+  /* 改成 inline-block 以保持原有大小 */
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}

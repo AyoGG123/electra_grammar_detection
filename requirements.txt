@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+numpy
+transformers==4.33.3
+torch
+scikit-learn
+gunicorn
