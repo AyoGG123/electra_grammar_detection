@@ -1,3 +1,7 @@
+使用Electra作文法檢測
+使用hfl/chinese-electra-180g-base-discriminator預訓練模型後微調
+資料使用nlpcc2023公開資料，加上資料處裡
+
 網址：POST http://伺服器ip位置/predict
 
 data type: json
