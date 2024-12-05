@@ -1,6 +1,7 @@
 使用Electra作文法檢測
 使用hfl/chinese-electra-180g-base-discriminator預訓練模型後微調
 資料使用nlpcc2023公開資料，加上資料處裡
+batch32 lr=1e-5*sqrt(2)
 
 網址：POST http://伺服器ip位置/predict
 
